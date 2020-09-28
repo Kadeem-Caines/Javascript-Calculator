@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+       <!-- Boostrap CSS style sheet -->
+    
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    
+    <!-- Custom Style sheet -->
+    
+     <link rel="stylesheet"  href="css/custom.css">
+    
+     <!-- Font awesome icons and themes -->
+    
+    <script src="https://kit.fontawesome.com/55c06e2b01.js" crossorigin="anonymous"></script>
+    
+    <!-- Google Fonts -->
+    
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+      
+    <title>Javascript Calculator</title>
+      
+  </head>
+    
+  <body>
+      
+    <h1>JavaScript Calculator</h1>
+
+
+      <br>
+      
+      <div class="calculatorBorder">
+          
+          <div class="solutionBar">
+              
+              <br>
+              <p  id="solution" class="solution">  </p>
+          
+          </div>
+          
+          <div class="calculatorBorderInner">
+      
+      <div class="flex-container">
+          
+    <button type="button" class="btn btn-secondary custom">%</button>
+    <button type="button" class="btn btn-secondary custom1" onclick="clearSolution()">C</button>
+    
+          
+    <div class="break"></div> 
+          
+    <button type="button" class="btn btn-secondary custom">1/x</button>
+    <button id="x^2" type="button" class="btn btn-secondary custom" onclick="chooseCalculation(this)" value="x^2">x^2</button>
+    <button id="√" type="button" class="btn btn-secondary custom" onclick="chooseCalculation(this)" value="√">√</button>
+    <button id="/" type="button" class="btn btn-secondary custom" value="/" onclick="chooseCalculation(this)">/</button>
+        
+    <div class="break"></div> 
+          
+    <button id="7" type="button" class="btn btn-secondary custom" onclick="chooseNumber(this)" value=7>7</button>
+    <button id="8" type="button" class="btn btn-secondary custom" onclick="chooseNumber(this)" value=8>8</button>
+    <button id="9" type="button" class="btn btn-secondary custom" onclick="chooseNumber(this)" value=7>9</button>
+    <button id="X" type="button" class="btn btn-secondary custom" onclick="chooseCalculation(this)" value="X">X</button>
+          
+        <div class="break"></div> 
+          
+        <button id="4" type="button"   class="btn btn-secondary custom" onclick="chooseNumber(this)" value=4>4</button>
+          <button id="5" type="button" class="btn btn-secondary custom" onclick="chooseNumber(this)" value=5>5</button>
+          <button id="6" type="button" class="btn btn-secondary custom" onclick="chooseNumber(this)" value=6>6</button>
+           <button id="-" type="button" class="btn btn-secondary custom" value="-" onclick="chooseCalculation(this)">-</button>
+          
+          <div class="break"></div> 
+          
+          <button id="1" type="button" class="btn btn-secondary custom" onclick="chooseNumber(this)" value=1 >1</button>
+          <button id="2" type="button" class="btn btn-secondary custom" onclick="chooseNumber(this)" value=2>2</button>
+          <button id="3" type="button" class="btn btn-secondary custom" onclick="chooseNumber(this)" value=3>3</button>
+           <button id="+" type="button" class="btn btn-secondary custom" onclick="chooseCalculation(this)" value="+" >+</button>
+          
+                 <div class="break"></div> 
+          
+             <button type="button" class="btn btn-secondary custom">+/-</button>
+          <button id="0" type="button" class="btn btn-secondary custom" onclick="chooseNumber(this)" value=0>0</button>
+          <button id="." type="button" class="btn btn-secondary custom" onclick="chooseNumber(this)" value=".">.</button>
+           <button id="=" type="button" class="btn btn-secondary custom" onclick="calculate()">=</button>
+          
+          
+</div>
+              
+              </div>
+          
+</div>
+      
+      <script src="script/cal.js"></script>
+      
+  </body>
+</html>
